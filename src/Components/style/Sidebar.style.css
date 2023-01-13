@@ -3,9 +3,9 @@
     width: 70%;
     /* display: none; */
     height: 100vh;
-    position: relative;
-    top: -45px;
-    transform: translate3d(-100%, 0, 0);
+    position: absolute;
+        top: 0px;
+        transform: translate3d(-101%, 0, 0);
     transition: all 0.4s;
 }
 

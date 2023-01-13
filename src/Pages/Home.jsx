@@ -17,9 +17,9 @@ const Home = () => {
         <>
             <Navbar openSideBar={toggleSideBar} />
             <BackDrop sideBar={sideBar} />
-            <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
             <Logo />
-            <Banner />
+            <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
+            {/* <Banner /> */}
         </>
     )
 }

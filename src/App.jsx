@@ -7,6 +7,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Tops from "./Pages/Tops";
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/all" element={<All />} />
-        <Route exact path="/" element={<Bottoms />} />
-        <Route exact path="/" element={<Accessories />} />
+        <Route exact path='/tops' element={<Tops />} />
+        <Route exact path="/bottoms" element={<Bottoms />} />
+        <Route exact path="/accessories" element={<Accessories />} />
       </Routes>
     </Router>
   )

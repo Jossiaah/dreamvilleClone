@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styled from 'styled-components';
+import BackDrop from '../Components/BackDrop';
+import Logo from '../Components/Logo';
+import Navbar from '../Components/Navbar';
+import Sidebar from '../Components/Sidebar';
+
+const Container = styled.div`
+    
+`;
 
 const Bottoms = () => {
+
+    const [sideBar, setSideBar] = useState(false);
+
+    const toggleSideBar = () => {
+        setSideBar((prevState) => !prevState)
+    }
     return (
-        <div>Bottoms</div>
+        <>
+            <Navbar openSideBar={toggleSideBar} />
+            <BackDrop sideBar={sideBar} />
+            <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
+            <Logo />
+            <Container>
+                Bottoms
+            </Container>
+        </>
     )
 }
 
