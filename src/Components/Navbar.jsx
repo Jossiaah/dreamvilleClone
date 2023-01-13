@@ -29,6 +29,7 @@ const Navbar = ({ openSideBar }) => {
                 <HiOutlineShoppingBag style={{ fontSize: "23px" }} />
                 <HiOutlineUser style={{ fontSize: "23px" }} />
             </Container>
+
         </>
     )
 }

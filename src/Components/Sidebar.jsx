@@ -46,9 +46,15 @@ const Sidebar = ({ sideBar, closeSidebar }) => {
                 <Link to='/all' style={{ textDecoration: "none", color: "black" }}>
                     <li>All</li>
                 </Link>
-                <li>Tops</li>
-                <li>Bottoms</li>
-                <li>Accessories</li>
+                <Link to='/tops' style={{ textDecoration: "none", color: "black" }}>
+                    <li>Tops</li>
+                </Link>
+                <Link to='/bottoms' style={{ textDecoration: "none", color: "black" }}>
+                    <li>Bottoms</li>
+                </Link>
+                <Link to='/accessories' style={{ textDecoration: "none", color: "black" }}>
+                    <li>Accessories</li>
+                </Link>
             </MenuItems>
         </div>
     )
