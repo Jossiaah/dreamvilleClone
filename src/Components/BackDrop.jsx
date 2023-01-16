@@ -1,6 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
-import backdrop from './style/BackDrop.style.css'
 
 
 

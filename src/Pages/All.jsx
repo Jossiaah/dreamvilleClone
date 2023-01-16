@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
-import styled from 'styled-components';
 import BackDrop from '../Components/BackDrop';
+import Banner from '../Components/Banner';
+import Legal from '../Components/Legal';
 import Logo from '../Components/Logo';
 import Navbar from '../Components/Navbar';
+import ProductCard from '../Components/ProductCard';
 import Sidebar from '../Components/Sidebar';
-
-const Container = styled.div`
-    
-`;
-
 
 const All = () => {
     const [sideBar, setSideBar] = useState(false);
@@ -22,9 +19,9 @@ const All = () => {
             <BackDrop sideBar={sideBar} />
             <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
             <Logo />
-            <Container>
-                All
-            </Container>
+            <ProductCard />
+            <Legal />
+            <Banner />
         </>
     )
 }
