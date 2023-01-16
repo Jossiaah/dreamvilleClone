@@ -7,7 +7,7 @@ import Logo from '../Components/Logo'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
 import img from '../assets/images/teeImg2.png'
-import dLogo from '../assets/images/dLogo.png'
+import Legal from '../Components/Legal'
 
 const Home = () => {
 
@@ -15,7 +15,6 @@ const Home = () => {
         background-color: hsl(0,0%,95%);
         padding-left: 12px;
         padding-right: 15px;
-        border-bottom: 2px solid black;
         height: 34vh;
         position: relative;
     `;
@@ -56,40 +55,6 @@ const Home = () => {
         
     `;
 
-    const Info = styled.div`
-        text-align: center;
-        margin-top: 30px;
-        border-bottom: 2px solid black;
-    `;
-
-    const InfoItems = styled.div`
-        background-color: hsl(0, 0%, 100%);
-        font-size: 15px;
-        /* font-family: 'Sofia Sans Semi Condensed', sans-serif; */
-        font-weight: 100;
-        list-style: none;
-        text-transform: uppercase;
-        line-height: 100px;
-    `;
-
-    const CopyRight = styled.div`
-        text-align: right;
-        color: #8a8a8a;
-        align-items: center;
-        display: flex;
-        justify-content: flex-end;
-        padding: 35px;
-        padding-right: 15px;
-        line-height: 24px;
-        
-    `;
-
-    const DLogo = styled.div`
-        img {
-            width: 50px;
-            margin-left: 20px ;
-        }
-    `;
 
     const [sideBar, setSideBar] = useState(false);
 
@@ -99,12 +64,12 @@ const Home = () => {
 
     return (
         <>
-            <Navbar openSideBar={toggleSideBar} />
+            <Navbar id='home' openSideBar={toggleSideBar} />
             <Logo />
             <Container>
                 <Hero>
                     <h2>introducing <br /> the classic <br /> airbrushed tee.</h2>
-                    <img src={img} />
+                    <img src={img} alt='shirt' />
                 </Hero>
                 <Button>
                     <Link to='/all' style={{ textDecoration: "none", color: "white" }}>
@@ -112,20 +77,7 @@ const Home = () => {
                     </Link>
                 </Button>
             </Container>
-            <Info>
-                <InfoItems>
-                    <li>terms of service</li>
-                    <li>privacy policy</li>
-                    <li>faqs</li>
-                    <li>contact us</li>
-                </InfoItems>
-            </Info>
-            <CopyRight>
-                <h4>Copyright &copy; 2021 Dreamville <br /> Official Store</h4>
-                <DLogo>
-                    <img src={dLogo} />
-                </DLogo>
-            </CopyRight>
+            <Legal />
             <Banner />
             <BackDrop sideBar={sideBar} />
             <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
