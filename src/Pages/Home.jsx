@@ -8,6 +8,7 @@ import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
 import img from '../assets/images/teeImg2.png'
 import Legal from '../Components/Legal'
+import ShoppingBag from '../Components/ShoppingBag'
 
 const Home = () => {
 
@@ -57,14 +58,19 @@ const Home = () => {
 
 
     const [sideBar, setSideBar] = useState(false);
-
+    const [shoppingBag, setShoppingBag] = useState(false);
     const toggleSideBar = () => {
         setSideBar((prevState) => !prevState)
     }
 
+    const toggleShoppingBag = () => {
+        setShoppingBag((prevState) => !prevState)
+
+    }
+
     return (
         <>
-            <Navbar id='home' openSideBar={toggleSideBar} />
+            <Navbar id='home' openSideBar={toggleSideBar} openShoppingBag={toggleShoppingBag} />
             <Logo />
             <Container>
                 <Hero>
@@ -81,6 +87,7 @@ const Home = () => {
             <Banner />
             <BackDrop sideBar={sideBar} />
             <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
+            <ShoppingBag bag={shoppingBag} closeBag={toggleShoppingBag} />
         </>
     )
 }

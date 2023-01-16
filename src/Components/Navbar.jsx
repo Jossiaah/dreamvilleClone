@@ -19,14 +19,14 @@ const Container = styled.div`
     border-bottom: 1px solid #e2e2e2;
 `;
 
-const Navbar = ({ openSideBar }) => {
+const Navbar = ({ openSideBar, openShoppingBag }) => {
     return (
         <>
             <Banner />
             <Container>
                 <HiBars3 style={{ fontSize: "25px" }} onClick={openSideBar} />
                 <HiOutlineMagnifyingGlass style={{ fontSize: "23px" }} />
-                <HiOutlineShoppingBag style={{ fontSize: "23px" }} />
+                <HiOutlineShoppingBag style={{ fontSize: "23px" }} onClick={openShoppingBag} />
                 <HiOutlineUser style={{ fontSize: "23px" }} />
             </Container>
 

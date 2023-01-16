@@ -8,27 +8,33 @@ import topsImg2 from './assets/images/product-images/Jumbo Classic Logo Crew Nec
 import topsImg3 from './assets/images/product-images/Red:Navy Ville Rugby.png';
 import topsImg4 from './assets/images/product-images/The Classic Varsity Hoodie.png'
 export const products = [
+    {
+        id: "hoodie-dreamville",
+        title: "Dreamville Classic Logo Hoodie Black/White",
+        img: productImg4,
+        price: "85.00",
+        type: "hoodie"
+        
+    },
+    {
+        id: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
+        title: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
+        img: productImg3,
+        price: "50.00",
+        type: "tee"
+    },
+    {
+        id: "black-classic-logo-airbrush-tee-green-logo",
+        title: "Black Classic Logo Airbrush Tee - Green Logo",
+        img: productImg,
+        price: "50.00",
+        type: "tee"
+    },
         {
-            id: "black-classic-logo-airbrush-tee-green-logo",
-            title: "Black Classic Logo Airbrush Tee - Green Logo",
-            img: productImg,
-            price: "50.00",
-            type: "tee"
-        },
-        {
-            id: "hoodie-dreamville",
-            title: "Dreamville Classic Logo Hoodie Black/White",
-            img: productImg4,
-            price: "85.00",
-            type: "hoodie"
-            
-        },
-        {
-            id: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
-            title: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
-            img: productImg3,
-            price: "50.00",
-            type: "tee"
+            id: 'BlackCoahesJacket',
+            title: 'Black Coaches Jacket',
+            img: topsImg1,
+            price: '120.00'
         },
         {
             id: "sweatpants-dreamville",
@@ -46,25 +52,12 @@ export const products = [
         },
 
         {
-            id: 'BlackCoahesJacket',
-            title: 'Black Coaches Jacket',
-            img: topsImg1,
-            price: '120.00'
-        },
-    
-        {
             id: 'JumboCLassicLogoCrewNeck' ,
             title: 'Jumbo Classic Logo Crew Neck Yellow',
             img: topsImg2,
             price: '125.00'
         },
     
-        {
-            id: 'RedVilleRugby',
-            title: 'Red Ville Rugby',
-            img: topsImg3 ,
-            price: '75.00'
-        },
     
         {
             id: 'ClassicVarsityHoddie',
@@ -73,7 +66,14 @@ export const products = [
             price: '150.00'
     
     
-        }
+        },
+        {
+            id: 'RedVilleRugby',
+            title: 'Red Ville Rugby',
+            img: topsImg3 ,
+            price: '75.00'
+        },
+    
     ]
 
     export default products;
