@@ -24,10 +24,10 @@ const Navbar = ({ openSideBar, openShoppingBag }) => {
         <>
             <Banner />
             <Container>
-                <HiBars3 style={{ fontSize: "25px" }} onClick={openSideBar} />
-                <HiOutlineMagnifyingGlass style={{ fontSize: "23px" }} />
-                <HiOutlineShoppingBag style={{ fontSize: "23px" }} onClick={openShoppingBag} />
-                <HiOutlineUser style={{ fontSize: "23px" }} />
+                <HiBars3 style={{ fontSize: "25px", cursor: "pointer" }} onClick={openSideBar} />
+                <HiOutlineMagnifyingGlass style={{ fontSize: "23px", cursor: "pointer" }} />
+                <HiOutlineShoppingBag style={{ fontSize: "23px", cursor: "pointer" }} onClick={openShoppingBag} />
+                <HiOutlineUser style={{ fontSize: "23px", cursor: "pointer" }} />
             </Container>
 
         </>

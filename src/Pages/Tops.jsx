@@ -8,6 +8,7 @@ import tops from '../tops';
 import { Link } from 'react-router-dom';
 import Legal from '../Components/Legal';
 import Banner from '../Components/Banner';
+import ShoppingBag from '../Components/ShoppingBag';
 
 const Container = styled.div`
     display: flex;
@@ -16,6 +17,7 @@ const Container = styled.div`
 
     h4 {
         text-align: left;
+        font-weight: 400;
         line-height: 18px;
         width: 345px;
     }
@@ -30,6 +32,30 @@ const Container = styled.div`
     img {
         width: 350px;
     }
+
+    @media (min-width:730px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        hr {
+            display: none;
+        }
+
+        h4 {
+            outline: 1px solid black;
+            padding: 12px;
+            font-size: 25px;
+            font-weight: 600;
+            width: 480px;
+            line-height: 40px;
+            height: 150px;
+        }
+
+        img {
+            width: 200px;
+        }
+    }
 `;
 
 const Price = styled.div`
@@ -43,10 +69,19 @@ const Price = styled.div`
         letter-spacing: 2px;
         padding-top: 10px;
         padding-bottom: 20px;
-        
-
     }
-    `
+
+    @media (min-width: 730px) {
+
+
+p {
+    position: relative;
+    bottom: 80px;
+    left: 30px;
+    font-size: 25px;
+}
+}
+    `;
 
 
 
@@ -54,16 +89,22 @@ const Price = styled.div`
 const Tops = () => {
 
     const [sideBar, setSideBar] = useState(false);
+    const [shoppingBag, setShoppingBag] = useState(false);
 
     const toggleSideBar = () => {
         setSideBar((prevState) => !prevState)
     }
+    const toggleShoppingBag = () => {
+        setShoppingBag((prevState) => !prevState)
+
+    }
 
     return (
         <>
-            <Navbar openSideBar={toggleSideBar} />
+            <Navbar openSideBar={toggleSideBar} openShoppingBag={toggleShoppingBag} />
             <BackDrop sideBar={sideBar} />
             <Sidebar sideBar={sideBar} closeSidebar={toggleSideBar} />
+            <ShoppingBag bag={shoppingBag} closeBag={toggleShoppingBag} />
             <Logo />
             {
                 tops && tops.map(top => {

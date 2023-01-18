@@ -9,6 +9,18 @@
     transition: all 0.4s ease-in-out;
 }
 
+@media (min-width: 550px) {
+    .sidebar {
+        width: 40%;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1000px) {
+    .sidebar {
+        width: 30%;
+    }
+}
 .sidebar--open {
     transform: translateX(0);
 }

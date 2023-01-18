@@ -1,17 +1,10 @@
-import productImg from './assets/images/product-images/Black Classic Logo Airbrush Tee - Green Logo.png'
-import productImg2 from './assets/images/product-images/Black Classic Logo Airbrush Tee - Pink and Blue Logo.png'
-import productImg3 from './assets/images/product-images/Cream Classic Logo Airbrush Tee - Purple and Gold Logo.png'
-import productImg4 from './assets/images/product-images/Dreamville Classic Logo Hoodie Black:White.png'    
-import productImg5 from './assets/images/product-images/Dreamville Classic Logo Sweats Black:White.png'
-import topsImg1 from './assets/images/product-images/Black Coaches Jacket.png';
-import topsImg2 from './assets/images/product-images/Jumbo Classic Logo Crew Neck Yellow:Black.png';
-import topsImg3 from './assets/images/product-images/Red:Navy Ville Rugby.png';
-import topsImg4 from './assets/images/product-images/The Classic Varsity Hoodie.png'
+import IMAGES from './images'
+
 export const products = [
     {
         id: "hoodie-dreamville",
         title: "Dreamville Classic Logo Hoodie Black/White",
-        img: productImg4,
+        img: IMAGES.productImg4,
         price: "85.00",
         type: "hoodie"
         
@@ -19,34 +12,34 @@ export const products = [
     {
         id: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
         title: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
-        img: productImg3,
+        img: IMAGES.productImg3,
         price: "50.00",
         type: "tee"
     },
     {
         id: "black-classic-logo-airbrush-tee-green-logo",
         title: "Black Classic Logo Airbrush Tee - Green Logo",
-        img: productImg,
+        img: IMAGES.productImg,
         price: "50.00",
         type: "tee"
     },
         {
             id: 'BlackCoahesJacket',
             title: 'Black Coaches Jacket',
-            img: topsImg1,
+            img: IMAGES.topsImg1,
             price: '120.00'
         },
         {
             id: "sweatpants-dreamville",
             title: "Dreamville Classic Logo Sweats Black/White",
-            img: productImg5,
+            img: IMAGES.productImg5,
             price: "90.00",
             type: "sweats"
         },
         {
             id: "Black Classic Logo Airbrush Tee - Pink and Blue Logo",
             title: "Black Classic Logo Airbrush Tee - Pink and Blue Logo",
-            img: productImg2,
+            img: IMAGES.productImg2,
             price: "50.00",
             type: "tee"
         },
@@ -54,7 +47,7 @@ export const products = [
         {
             id: 'JumboCLassicLogoCrewNeck' ,
             title: 'Jumbo Classic Logo Crew Neck Yellow',
-            img: topsImg2,
+            img: IMAGES.topsImg2,
             price: '125.00'
         },
     
@@ -62,7 +55,7 @@ export const products = [
         {
             id: 'ClassicVarsityHoddie',
             title: 'The CLassic Varsity Hoddie',
-            img: topsImg4,
+            img: IMAGES.topsImg4,
             price: '150.00'
     
     
@@ -70,7 +63,7 @@ export const products = [
         {
             id: 'RedVilleRugby',
             title: 'Red Ville Rugby',
-            img: topsImg3 ,
+            img: IMAGES.topsImg3 ,
             price: '75.00'
         },
     
