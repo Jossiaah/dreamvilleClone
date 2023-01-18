@@ -25,6 +25,30 @@ const Container = styled.div`
     img {
         width: 350px;
     }
+
+    @media (min-width:730px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        hr {
+            display: none;
+        }
+
+        h4 {
+            outline: 1px solid black;
+            padding: 12px;
+            font-size: 25px;
+            font-weight: 600;
+            width: 480px;
+            line-height: 40px;
+            height: 150px;
+        }
+
+        img {
+            width: 200px;
+        }
+    }
 `;
 
 const Price = styled.div`
@@ -42,7 +66,19 @@ const Price = styled.div`
 
     }
 
-`
+    @media (min-width: 730px) {
+
+
+        p {
+            position: relative;
+            bottom: 80px;
+            left: 30px;
+            font-size: 25px;
+        }
+    }
+
+
+`;
 
 const ProductCard = () => {
     return (

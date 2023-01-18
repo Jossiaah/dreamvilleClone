@@ -1,34 +1,61 @@
-import topsImg1 from './assets/images/product-images/Black Coaches Jacket.png';
-import topsImg2 from './assets/images/product-images/Jumbo Classic Logo Crew Neck Yellow:Black.png';
-import topsImg3 from './assets/images/product-images/Red:Navy Ville Rugby.png';
-import topsImg4 from './assets/images/product-images/The Classic Varsity Hoodie.png'
+import IMAGES from './images'
 
 export const tops = [
+    
     {
         id: 'BlackCoahesJacket',
         title: 'Black Coaches Jacket',
-        img: topsImg1,
+        img: IMAGES.topsImg1,
         price: '120.00'
     },
-
+    {
+        id: "hoodie-dreamville",
+        title: "Dreamville Classic Logo Hoodie Black/White",
+        img: IMAGES.productImg4,
+        price: "85.00",
+        type: "hoodie"
+        
+    },
+    {
+        id: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
+        title: "Cream Classic Logo Airbrush Tee - Purple and Gold Logo",
+        img: IMAGES.productImg3,
+        price: "50.00",
+        type: "tee"
+    },
+    
     {
         id: 'JumboCLassicLogoCrewNeck' ,
         title: 'Jumbo Classic Logo Crew Neck Yellow',
-        img: topsImg2,
+        img: IMAGES.topsImg2,
         price: '125.00'
+    },
+    {
+        id: "black-classic-logo-airbrush-tee-green-logo",
+        title: "Black Classic Logo Airbrush Tee - Green Logo",
+        img: IMAGES.productImg,
+        price: "50.00",
+        type: "tee"
     },
 
     {
         id: 'RedVilleRugby',
         title: 'Red Ville Rugby',
-        img: topsImg3 ,
+        img: IMAGES.topsImg3 ,
         price: '75.00'
+    },
+    {
+        id: "Black Classic Logo Airbrush Tee - Pink and Blue Logo",
+        title: "Black Classic Logo Airbrush Tee - Pink and Blue Logo",
+        img: IMAGES.productImg2,
+        price: "50.00",
+        type: "tee"
     },
 
     {
         id: 'ClassicVarsityHoddie',
         title: 'The CLassic Varsity Hoddie',
-        img: topsImg4,
+        img: IMAGES.topsImg4,
         price: '150.00'
 
 

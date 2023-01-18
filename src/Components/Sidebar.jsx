@@ -39,7 +39,7 @@ const Sidebar = ({ sideBar, closeSidebar }) => {
     return (
         <div className={sideBar ? " sidebar sidebar--open" : "sidebar"}>
             <CloseContainer>
-                <HiOutlineXMark className={sideBar ? " sidebar--open" : "sidebar--open"} onClick={closeSidebar} style={{ marginRight: "5px", marginLeft: "10px", color: "#7d7d7d", fontSize: "20px" }} />
+                <HiOutlineXMark className={sideBar ? " sidebar--open" : "sidebar--open"} onClick={closeSidebar} style={{ marginRight: "5px", marginLeft: "10px", color: "#7d7d7d", fontSize: "20px", cursor: "pointer" }} />
                 <p>Close</p>
             </CloseContainer>
             <MenuItems>

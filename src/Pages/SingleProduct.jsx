@@ -11,13 +11,17 @@ import Banner from '../Components/Banner';
 
 const Container = styled.div`
      text-align: left;
+     display: flex;
+    flex-direction: column;
     /* width: 100vw; */
     align-items: center;
 
     h3 {
         line-height: 35px;
         font-family: 'Oswald', sans-serif;
-        width: 250px;
+        width: 78vw;
+        justify-content: left;
+        text-align: left;
         font-weight: 400;
         font-size: 25px;
         padding: 20px;
@@ -25,10 +29,12 @@ const Container = styled.div`
     }
 
     img {
-        width: 100vw;
+        width: 80vw;
     }
     
     p {
+
+        width: 80vw;
         letter-spacing: 1px;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
